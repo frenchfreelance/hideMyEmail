@@ -1,0 +1,26 @@
+<!doctype html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>hideMyEmail Test</title>
+  </head>
+  <body>
+	 <a class="mail" href="" data-u="contact" data-d="alexandre-vasseur" data-e="fr" data-s='When, when is now? (if "now" is here)"' data-b="my super body!!">Contact me!</a>
+	 
+	 
+	 
+	 
+	 
+     <!-- Load local jQuery. -->
+     <script src="../src/jquery.min.js"></script>
+
+     <!-- Load local lib and tests. -->
+     <script src="../src/jquery.hideMyEmail.js"></script>
+	 
+	 <script>
+		 $(document).ready(function(){
+	 		 $('a.mail').hideMyEmail();
+		 });
+	 </script>
+  </body>
+</html>

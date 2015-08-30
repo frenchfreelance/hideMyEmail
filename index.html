@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	
+    <title>hideMyEmail jQuery plugin that helps you to hide your email and prevent crawlers to get it!</title>
+	
+	<!-- Bootstrap CSS -->
+	<link href="presentation/css/custom.css" media="all" rel="stylesheet" />
+  </head>
+  <body>
+	  <div class="container">
+		  <div class="page-header">
+			  <h1>hideMyEmail jQuery plugin</h1>
+			  <p class="lead">A jQuery plugin that helps you to hide your email on your page and prevent crawlers to get it!</p>
+		  </div>
+
+		  <h3>How to use ?</h3>
+		  <p>It's super simple.<br />
+			 
+			 you can use data attributes to make sure crawlers won't parse it easily, just like this <br />
+			 <code>&lt;a class="mail" href="" data-u="johndoe" data-d="domain" data-e="com" data-s="subject" data-b="body"&gt;Contact me!&lt;/a&gt;</code>
+		</p>
+		<p>
+			See how data attributes are used : 
+			<ul>
+				<li><strong>data-u</strong> : username before the @</li>
+				<li><strong>data-d</strong> : domain name without extension</li>
+				<li><strong>data-e</strong> : extension without dot (.)</li>
+				<li><strong>data-s (optional)</strong> : subject of the email</li>
+				<li><strong>data-b (optional)</strong> : body of the email</li>
+			</ul>
+		</p>
+		<p>
+			One last thing, if you don't put anything between the <code>&lt;a&gt;&lt;a&gt;</code>, your email is printed by default.
+		</p>
+		
+		<h3>Javascript / jQuery</h3>
+		<p>
+			Include in the bottom of your page jQuery and the plugin, for instance : <br />
+			<pre>&lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/jquery.hideMyEmail.min.js"&gt;&lt;/script&gt;
+			</pre>
+			Then, the plugin itself : <code>&lt;script src="js/jquery.hideMyEmail.min.js"&gt;&lt;/script&gt;</code>
+			
+		</p>	
+		<p>
+			Finally, either put just after this or in another javascript file include and call the function on a jQuery selector : <br />
+			<code>
+		   		 $(document).ready(function(){
+		   	 		 $('a.mail').hideMyEmail();
+		   		 });
+			</code>
+			
+			
+			<br />
+			and voilà!
+		</p>
+	
+		<p class="text-center">
+		  <a href="js/jquery.hideMyEmail.min.js" class="btn btn-success btn-lg">Download the plugin<br />jquery.hideMyEmail.min.js, only 438 o!</a>
+		</p>
+		
+		
+		<h3>Demo</h3>
+		
+		<p>
+			Check the source on this link, and try it : <a class="mail btn btn-primary" href="#whatever" data-u="johndoe" data-d="domain" data-e="com" data-s="subject" data-b="body">Contact me!</a>
+		</p>
+		<p>
+			Otherwise, you can just go at this <a class="btn btn-secondary" href="/presentation/">demo link</a>
+		</p>
+		
+
+		
+		<h3>Contacts</h3>
+		<p>
+			Author: <a href="http://www.alexandre-vasseur.fr">Alexandre Vasseur, freelance web developer</a><br />
+			Contact : <a class="mail" href="" data-u="contact" data-d="alexandre-vasseur" data-e="fr" data-s='Your jQuery plugin hideMyEmail'></a><br />
+			
+			
+		</p>
+		
+		<hr />
+		<footer class="footer text-muted">
+			Copyright © A. Vasseur, 2015<br />
+			Licence : Free to use and modify, just mention my name and a link to the demo please and I'll be happy.
+		</footer>
+	</div>
+		 
+	<!-- jQuery first, then jquery.hideMyEmail.js, always. -->
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/jquery.hideMyEmail.js"></script>
+	<script src="js/example.js"></script>
+  </body>
+</html>
