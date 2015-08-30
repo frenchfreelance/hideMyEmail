@@ -1,6 +1,6 @@
 /* 
  * HideMyMail (jQuery Plugin)
- * Version: 0.1
+ * Version: 0.1.0
  * Date: 2015 August
  * Author: Alexandre Vasseur
  * Description and Demo: http://www.alexandre-vasseur.fr/hide-my-email/

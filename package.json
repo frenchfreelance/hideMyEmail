@@ -1,0 +1,32 @@
+{
+  "name": "hidemyemail",
+  "version": "0.1.0",
+  "description": "A jQuery plugin that helps you to hide your email on your page and prevent crawlers to get it!",
+  "main": "js/jquery.hideMyEmail.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "$('a.mail').hideMyEmail();"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frenchfreelance/hideMyEmail.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "jquery",
+    "antispam",
+    "email-protection",
+    "hide-my-email",
+    "crawlers",
+    "script"
+  ],
+  "author": "Alexandre Vasseur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frenchfreelance/hideMyEmail/issues"
+  },
+  "homepage": "https://github.com/frenchfreelance/hideMyEmail#readme"
+}
